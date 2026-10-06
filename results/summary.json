@@ -1,0 +1,237 @@
+{
+  "data": {
+    "source": "FRED / IMF: PNGASUSUSDM, PNGASEUUSDM, PNGASJPUSDM",
+    "first": "2016-03-01",
+    "last": "2026-07-01",
+    "months": 125
+  },
+  "assumptions": {
+    "cargo_mmbtu": 3500000.0,
+    "speed_knots": 17.5,
+    "charter_usd_day": 75000.0,
+    "ballast_fuel_usd_day": 35000.0,
+    "boil_off_per_day": 0.001,
+    "hh_multiplier": 1.15,
+    "tolling_fee": 2.5,
+    "port_days": 2.0
+  },
+  "routes": {
+    "NW Europe (Rotterdam)": {
+      "distance_nm": 4900,
+      "round_trip_days": 25.3,
+      "shipping_usd_mmbtu_at_10": 1.176
+    },
+    "Iberia (Huelva)": {
+      "distance_nm": 4500,
+      "round_trip_days": 23.4,
+      "shipping_usd_mmbtu_at_10": 1.166
+    },
+    "Japan via Panama": {
+      "distance_nm": 9250,
+      "round_trip_days": 46.0,
+      "shipping_usd_mmbtu_at_10": 1.656
+    },
+    "Japan via Cape": {
+      "distance_nm": 15800,
+      "round_trip_days": 77.2,
+      "shipping_usd_mmbtu_at_10": 2.407
+    }
+  },
+  "destination_share": {
+    "Japan via Panama": 0.656,
+    "Iberia (Huelva)": 0.288,
+    "Cancel cargo": 0.056
+  },
+  "destination_counts_by_year": {
+    "2016": {
+      "Japan via Panama": 10
+    },
+    "2017": {
+      "Japan via Panama": 12
+    },
+    "2018": {
+      "Iberia (Huelva)": 2,
+      "Japan via Panama": 10
+    },
+    "2019": {
+      "Iberia (Huelva)": 2,
+      "Japan via Panama": 10
+    },
+    "2020": {
+      "Cancel cargo": 7,
+      "Japan via Panama": 5
+    },
+    "2021": {
+      "Iberia (Huelva)": 2,
+      "Japan via Panama": 10
+    },
+    "2022": {
+      "Iberia (Huelva)": 10,
+      "Japan via Panama": 2
+    },
+    "2023": {
+      "Iberia (Huelva)": 5,
+      "Japan via Panama": 7
+    },
+    "2024": {
+      "Iberia (Huelva)": 5,
+      "Japan via Panama": 7
+    },
+    "2025": {
+      "Iberia (Huelva)": 8,
+      "Japan via Panama": 4
+    },
+    "2026": {
+      "Iberia (Huelva)": 2,
+      "Japan via Panama": 5
+    }
+  },
+  "cancel_months": [
+    "2020-02",
+    "2020-03",
+    "2020-04",
+    "2020-05",
+    "2020-06",
+    "2020-07",
+    "2020-08"
+  ],
+  "flexibility_value_usd_m_one_cargo_per_month": {
+    "flexible_with_cancellation": 3461.9,
+    "fixed_europe_with_cancellation": 3037.7,
+    "fixed_asia_panama_with_cancellation": 3169.0,
+    "fixed_europe_no_cancellation": 3000.4
+  },
+  "yearly_margin_usd_m": {
+    "2016": {
+      "flexible": 92.48,
+      "fixed_europe": 7.38,
+      "fixed_asia_panama": 92.48
+    },
+    "2017": {
+      "flexible": 91.56,
+      "fixed_europe": 48.1,
+      "fixed_asia_panama": 91.56
+    },
+    "2018": {
+      "flexible": 195.92,
+      "fixed_europe": 135.86,
+      "fixed_asia_panama": 193.82
+    },
+    "2019": {
+      "flexible": 43.66,
+      "fixed_europe": 25.71,
+      "fixed_asia_panama": 41.22
+    },
+    "2020": {
+      "flexible": 40.79,
+      "fixed_europe": 9.97,
+      "fixed_asia_panama": 40.79
+    },
+    "2021": {
+      "flexible": 527.58,
+      "fixed_europe": 436.33,
+      "fixed_asia_panama": 524.23
+    },
+    "2022": {
+      "flexible": 1228.66,
+      "fixed_europe": 1198.21,
+      "fixed_asia_panama": 992.65
+    },
+    "2023": {
+      "flexible": 383.87,
+      "fixed_europe": 361.25,
+      "fixed_asia_panama": 363.69
+    },
+    "2024": {
+      "flexible": 305.87,
+      "fixed_europe": 290.8,
+      "fixed_asia_panama": 303.85
+    },
+    "2025": {
+      "flexible": 277.14,
+      "fixed_europe": 274.43,
+      "fixed_asia_panama": 260.65
+    },
+    "2026": {
+      "flexible": 274.4,
+      "fixed_europe": 249.67,
+      "fixed_asia_panama": 264.03
+    }
+  },
+  "panama_disruption": {
+    "window": [
+      "2023-08-01",
+      "2024-06-01"
+    ],
+    "months_destination_changes": 9,
+    "avg_netback_loss_usd_mmbtu": 0.474,
+    "loss_per_cargo_usd_m_avg": 1.66
+  },
+  "charter_sensitivity": [
+    {
+      "charter_usd_day": 40000,
+      "share_asia": 0.712,
+      "share_europe": 0.248,
+      "share_cancel": 0.04,
+      "spread_asia_minus_eu_usd": 0.536
+    },
+    {
+      "charter_usd_day": 75000,
+      "share_asia": 0.656,
+      "share_europe": 0.288,
+      "share_cancel": 0.056,
+      "spread_asia_minus_eu_usd": 0.329
+    },
+    {
+      "charter_usd_day": 120000,
+      "share_asia": 0.48,
+      "share_europe": 0.408,
+      "share_cancel": 0.112,
+      "spread_asia_minus_eu_usd": 0.063
+    },
+    {
+      "charter_usd_day": 200000,
+      "share_asia": 0.328,
+      "share_europe": 0.488,
+      "share_cancel": 0.184,
+      "spread_asia_minus_eu_usd": -0.411
+    },
+    {
+      "charter_usd_day": 300000,
+      "share_asia": 0.136,
+      "share_europe": 0.568,
+      "share_cancel": 0.296,
+      "spread_asia_minus_eu_usd": -1.003
+    }
+  ],
+  "portfolio_36m": {
+    "window": [
+      "2023-08-01",
+      "2026-07-01"
+    ],
+    "supply_cargoes_per_month": 10,
+    "fleet_vessels": 12,
+    "capacity": {
+      "NW Europe (Rotterdam)": 4,
+      "Iberia (Huelva)": 3,
+      "Japan via Panama": 3,
+      "Japan via Cape": 4
+    },
+    "milp_margin_usd_m": 9303.1,
+    "greedy_margin_usd_m": 8357.2,
+    "europe_only_margin_usd_m": 6647.6,
+    "milp_uplift_vs_greedy_pct": 11.32,
+    "avg_ship_day_value_usd": 95339.0,
+    "value_of_one_more_vessel_usd_m_per_year": 34.8,
+    "cargoes_by_route": {
+      "NW Europe (Rotterdam)": 133,
+      "Iberia (Huelva)": 108,
+      "Japan via Panama": 86,
+      "Japan via Cape": 22
+    },
+    "cancelled_economic": 0,
+    "unlifted_no_ship_or_slot": 11,
+    "months_fleet_binding": 17,
+    "breakeven_charter_for_extra_vessel_usd_day_median": 0.0
+  }
+}
